@@ -1,5 +1,5 @@
 
-Física Computacional - Proyectos en Fortran
+# Física Computacional - Proyectos en Fortran
 
 Este repositorio contiene los códigos y análisis desarrollados en Fortran para diversos problemas numéricos en el marco del curso de Física Computacional. Los proyectos abarcan desde interpolación numérica hasta el cálculo de eigenvalores, pasando por derivación, integración, y resolución de sistemas de ecuaciones diferenciales.
 
