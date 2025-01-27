@@ -1,82 +1,96 @@
-# Física Computacional - Proyectos en Fortran
 
-Este repositorio contiene los códigos y análisis desarrollados en Fortran para diversos problemas numéricos en el marco del curso de Física Computacional. Los proyectos abarcan desde interpolación numérica hasta el cálculo de eigenvalores, pasando por derivación, integración, y resolución de sistemas de ecuaciones diferenciales.
+# Computational Physics Projects in Fortran
 
-## Contenido del Repositorio
+This repository contains Fortran code developed for various numerical problems as part of the Computational Physics course. The projects cover topics such as numerical interpolation, differentiation, integration, eigenvalue calculations, and solving differential equations.
 
-### 1. **Proyecto: Cálculo de la Ecuación Secular**
-- **Descripción**: Resolución numérica de la ecuación secular para un sistema de 3 resortes acoplados con cargas positivas.
-- **Técnicas utilizadas**:
-  - Método de diferencias finitas para aproximar derivadas.
-  - Método de la potencia para cálculo de eigenvalores y eigenvectores.
-- **Archivos**:
-  - `p1.f90`: Genera la matriz de potencial usando diferencias finitas.
-  - `p2.f90`: Calcula los eigenvalores y eigenvectores de la matriz usando el método de la potencia.
-- **Resultados**:
-  - Modos normales obtenidos: ω₁ = 5 y ω₂ = 15.
-  - Comparación numérica vs. analítica con precisión alta.
+## Repository Contents
 
----
-
-### 2. **Tarea 2: Interpolación Numérica**
-- **Descripción**: Implementación de los métodos de interpolación de Newton y Lagrange para analizar datos experimentales (temperatura específica del agua).
-- **Técnicas utilizadas**:
-  - Interpolación polinómica.
-  - Derivación numérica para análisis de mínimos.
-- **Archivos**:
-  - `lagrange.f90`: Interpolación de Lagrange.
-  - `newton.f90`: Interpolación de Newton.
-- **Resultados**:
-  - Gráficas de las interpolaciones y diferencias entre métodos.
-  - Diferencia máxima entre Newton y Lagrange: \( \Delta = 1.82 \times 10^{-12} \).
+### 1. **Project: Secular Equation Calculation**
+- **Description**: Numerical solution of the secular equation for a system of 3 coupled springs with positive charges.
+- **Techniques Used**:
+  - Finite difference method to approximate derivatives.
+  - Power method to compute eigenvalues and eigenvectors.
+- **Files**:
+  - `p1.f90`: Generates the potential matrix using finite differences.
+  - `p2.f90`: Calculates eigenvalues and eigenvectors using the power method.
+- **Results**:
+  - Normal modes obtained: \( \omega_1 = 5 \), \( \omega_2 = 15 \).
+  - High precision comparison between numerical and analytical results.
 
 ---
 
-### 3. **Tarea 3: Derivación Numérica**
-- **Descripción**: Uso de diferencias finitas para aproximar derivadas y resolver ecuaciones diferenciales.
-- **Técnicas utilizadas**:
-  - Diferencias progresivas, regresivas y centradas.
-  - Métodos de orden 4 para mejorar precisión.
-- **Archivos**:
-  - `derivada.f90`: Aproximación de derivadas de primer y segundo orden.
-  - `ecuacion_diferencial.f90`: Resolución numérica de una ecuación diferencial con condiciones iniciales.
-- **Resultados**:
-  - Gráficas de las derivadas calculadas.
-  - Análisis del campo eléctrico en un sistema con resistencia e inductancia.
+### 2. **Task 2: Numerical Interpolation**
+- **Description**: Implementation of Newton and Lagrange interpolation methods to analyze experimental data (specific heat of water).
+- **Techniques Used**:
+  - Polynomial interpolation.
+  - Numerical differentiation to analyze minima.
+- **Files**:
+  - `lagrange.f90`: Implements Lagrange interpolation.
+  - `newton.f90`: Implements Newton interpolation.
+- **Results**:
+  - Comparison of interpolation methods with a maximum difference of \( \Delta = 1.82 	imes 10^{-12} \).
 
 ---
 
-### 4. **Tarea 4: Integración Numérica**
-- **Descripción**: Aplicación de métodos de integración como la regla de Simpson para resolver ecuaciones diferenciales y calcular áreas.
-- **Técnicas utilizadas**:
-  - Regla de Simpson compuesta.
-  - Fórmulas de cuadratura para polinomios cúbicos.
-- **Archivos**:
-  - `simpson.f90`: Implementación de la regla de Simpson para intervalos uniformes.
-- **Resultados**:
-  - Cálculo de la distancia recorrida por un automóvil hasta detenerse.
-  - Demostración teórica y práctica de la regla 3/8 para polinomios cúbicos.
+### 3. **Task 3: Numerical Differentiation**
+- **Description**: Use of finite differences to approximate derivatives and solve differential equations.
+- **Techniques Used**:
+  - Forward, backward, and centered finite differences.
+  - Fourth-order methods for increased accuracy.
+- **Files**:
+  - `derivada.f90`: Approximates first and second derivatives.
+  - `ecuacion_diferencial.f90`: Solves a differential equation with initial conditions.
+- **Results**:
+  - Graphs of calculated derivatives.
+  - Analysis of electric fields in a system with resistance and inductance.
 
 ---
 
-### 5. **Tarea 5: Cálculo de Eigenvalores**
-- **Descripción**: Resolución del sistema de tres masas acopladas con muelles utilizando métodos numéricos.
-- **Técnicas utilizadas**:
-  - Interpolación de Newton para encontrar el polinomio característico.
-  - Método de la potencia e inverso para cálculo de eigenvalores y eigenvectores.
-- **Archivos**:
-  - `eigenvalores.f90`: Resolución del sistema de ecuaciones diferenciales mediante eigenvalores.
-- **Resultados**:
-  - Modos normales obtenidos: \( \omega_1 = 0.837 \), \( \omega_2 = 1.612 \), \( \omega_3 = 2.121 \).
+### 4. **Task 4: Numerical Integration**
+- **Description**: Application of numerical integration methods, such as Simpson's rule, to solve differential equations and calculate areas.
+- **Techniques Used**:
+  - Composite Simpson's rule.
+  - Quadrature formulas for cubic polynomials.
+- **Files**:
+  - `simpson.f90`: Implements Simpson's rule for uniform intervals.
+- **Results**:
+  - Calculation of the distance traveled by a car until it stops.
+  - Demonstration of the 3/8 rule for cubic polynomial integration.
 
 ---
 
-## Requisitos
-- **Compilador Fortran**: GNU Fortran (`gfortran`) o similar.
-- **Herramientas adicionales**: `gnuplot` para generar gráficas.
+### 5. **Task 5: Eigenvalue Calculation**
+- **Description**: Solves the system of three masses coupled with springs using numerical methods.
+- **Techniques Used**:
+  - Newton interpolation to find the characteristic polynomial.
+  - Power and inverse power methods for eigenvalue and eigenvector computation.
+- **Files**:
+  - `eigenvalores.f90`: Resolves the system of differential equations using eigenvalues.
+- **Results**:
+  - Normal modes obtained: \( \omega_1 = 0.837 \), \( \omega_2 = 1.612 \), \( \omega_3 = 2.121 \).
 
-## Instrucciones de Uso
-1. Clona el repositorio:
+---
+
+## Requirements
+- **Fortran Compiler**: GNU Fortran (`gfortran`) or similar.
+- **Additional Tools**: `gnuplot` for graph generation.
+
+## Usage Instructions
+1. Clone this repository:
    ```bash
-   git clone https://github.com/DiegoViillalba/fortran-fisica-computacional.git
-   cd fortran-fisica-computacional
+   git clone https://github.com/your-username/fortran-computational-physics.git
+   cd fortran-computational-physics
+   ```
+2. Compile the desired program:
+   ```bash
+   gfortran program_name.f90 -o program_name
+   ```
+3. Run the program:
+   ```bash
+   ./program_name
+   ```
+4. (Optional) Use `gnuplot` to plot results.
+
+## Author
+**Diego Antonio Villalba González**  
+Developed as part of the Computational Physics course at Facultad de Ciencias, UNAM.
